@@ -1,5 +1,5 @@
 import  {Sequelize, Model, DataTypes} from 'sequelize'
-import { sequelize } from '../config/database'
+import { sequelize } from '../config/database.js'
 
 export class Admin extends Model{}
 

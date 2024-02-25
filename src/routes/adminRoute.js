@@ -5,5 +5,5 @@ import { findAdmin } from "../controller/admin/signup.js"
 
 export const adminRouter = Router(); // create an instance <studentRouter> of Router from express
 
-adminRouter.post("/signup", createAdmin);  //path of signup form , createStudent = controller fxn
+// adminRouter.post("/signup", createAdmin);  //path of signup form , createStudent = controller fxn
 adminRouter.get("/searchadmin",findAdmin);

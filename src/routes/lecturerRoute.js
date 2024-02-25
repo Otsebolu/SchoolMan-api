@@ -5,5 +5,5 @@ import { findLecturer} from "../controller/lecturer/signup.js"
 
 export const lecturerRouter = Router(); // create an instance <studentRouter> of Router from express
 
-lecturerRouter.post("/signup", createLecturer);  //path of signup form , createStudent = controller fxn
+// lecturerRouter.post("/signup", createLecturer);  //path of signup form , createStudent = controller fxn
 lecturerRouter.get("/searchlecturer",findLecturer);

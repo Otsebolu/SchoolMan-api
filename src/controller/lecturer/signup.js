@@ -1,5 +1,7 @@
 import { where } from "sequelize";
 import { Lecturer } from "../../models/lecturer.js";
+//import { Student } from "../../models/student.js"; //imported  this bc i want to pick data from the <Student table>
+//import { Course } from "../../models/course.js";
 
 //create lecturer's account so they can sign up(register)
 export const createLecturer = async(req, res)=>{
@@ -54,3 +56,9 @@ export const findLecturer = async(req, res)=>{
 
 
 //ending -part -searching for a lecturer
+
+
+//get all students registered for the course
+    // Find all users
+// export const getstds= await Student.findAll();
+   

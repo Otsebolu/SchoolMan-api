@@ -1,35 +1,36 @@
 import  {Sequelize, Model, DataTypes} from 'sequelize'
 import { sequelize } from '../config/database.js'
 
-export class Lecturer extends Model{}
+export class Course extends Model{}
 
-Lecturer.init({
-    lecturerID: {
+Course.init({
+    CourseID: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
         allowNull: false,
         primaryKey: true
     },
-    firstname: {
+    coursecode: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    lastname: {
+    coursename: {
+        type: DataTypes.STRING,
+        unique: true,
+        allowNull: false
+    },
+    department: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    email: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    password: {
+    faculty: {
         type: DataTypes.STRING,
         allowNull: false
     }
 
 },{
     sequelize,
-    modelName: 'Lecturer'
+    modelName: 'Course'
 }
 
 )

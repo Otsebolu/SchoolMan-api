@@ -9,5 +9,6 @@ export const config = {
     port: process.env.port,
     dbname: process.env.dbname,
     dbpassword: process.env.dbpassword,
-    dbusername: process.env.dbusername
+    dbusername: process.env.dbusername,
+    secretkey: process.env.secretkey
 }

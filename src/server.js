@@ -4,6 +4,7 @@ import { sequelize } from "./config/database.js";
 import { studentRouter } from "./routes/studentRoute.js";  //importing studentRouter in <routes/studentRoute.js>
 import { lecturerRouter } from "./routes/lecturerRoute.js";
 import { adminRouter } from "./routes/adminRoute.js";
+import { userRouter } from "./routes/userRoute.js";
 
 
 const app = express();
@@ -12,7 +13,8 @@ app.use(express.json()); //  this is a middleware to get the req.body
 
 app.use('/', studentRouter);
 app.use('/', lecturerRouter);  //is this ok please??
-app.use('/', adminRouter);     //is this ok???   . nor sure as there shd be only one index page. so correct me PLEASE
+app.use('/', adminRouter); 
+app.use('/', userRouter);     //is this ok???   . nor sure as there shd be only one index page. so correct me PLEASE
 
 
 

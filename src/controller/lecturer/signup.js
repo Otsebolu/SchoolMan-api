@@ -33,8 +33,6 @@ export const createLecturer = async(req, res)=>{
     })
 
 }
-//ending part-create lecturer account so they can sign up(register)
-
 
 //searching for a lecturer
 export const findLecturer = async(req, res)=>{
@@ -45,7 +43,6 @@ export const findLecturer = async(req, res)=>{
             return res.json({
                 "message": "lecturer not found"
             })
-            
         }
         return res.json({
             "message": "Lecturer found",
